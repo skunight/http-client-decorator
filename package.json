@@ -1,6 +1,6 @@
 {
   "name": "http-client-decorator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "http client with decorator",
   "main": "dist/index.js",
   "author": "zzy",
@@ -10,7 +10,8 @@
     "url": "https://github.com/skunight/http-client-decorator"
   },
   "scripts": {
-    "build": "rm -rf dist && tsc -p tsconfig.json"
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "publish:npm": "yarn publish --access public"
   },
   "devDependencies": {
     "typescript": "^3.2.2"
@@ -19,5 +20,11 @@
     "@types/node": "^10.12.18",
     "axios": "^0.18.0",
     "reflect-metadata": "^0.1.12"
-  }
+  },
+  "keywords": [
+    "http-client",
+    "http",
+    "client",
+    "decorator"
+  ]
 }
