@@ -19,15 +19,6 @@ Http client is use [Axios](https://github.com/axios/axios)
 
 ```typescript
 @Http(options)  //options is Axios.create options
-export enum  RequestMethod {
-  GET = 'GET',
-  POST = 'POST',
-  HEAD = 'HEAD',
-  PUT = 'PUT',
-  DELETE = 'DELETE',
-  OPTIONS = 'OPTIONS',
-  PATCH = 'PATCH',
-}
 class Test {
   @Get('url',{data},{config})     //config is instance.request config
   method1(@Res res?) {
@@ -40,4 +31,17 @@ class Test {
   }
 }
 ```
+RequestMethod is a enum
+```typescript
+enum  RequestMethod {
+  GET = 'GET',
+  POST = 'POST',
+  HEAD = 'HEAD',
+  PUT = 'PUT',
+  DELETE = 'DELETE',
+  OPTIONS = 'OPTIONS',
+  PATCH = 'PATCH',
+}
+```
+
 That's it!
